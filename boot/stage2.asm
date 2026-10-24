@@ -75,5 +75,5 @@ gdt64:
     dq 0x0000920000000000
 
 gdt64_ptr:
-    dw $ - gdt64 - 1                    ; GDT 限长（16 位）
-    dq gdt64                            ; GDT 基址（64 位，注意是 dq）
+    dw $ - gdt64 - 1
+    dq gdt64
